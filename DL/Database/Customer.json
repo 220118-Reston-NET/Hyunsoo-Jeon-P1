@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Hanson",
+    "Address": "2121 Second st, Santa clara, CA 22222",
+    "Email": "hanson@email.com",
+    "ContactNo": "222-333-4445"
+  },
+  {
+    "Name": "Hyunsoo",
+    "Address": "1234 Main St, San Jose, CA 11111",
+    "Email": "hyunsoo@email.com",
+    "ContactNo": "123-456-7891"
+  },
+  {
+    "Name": "Mike",
+    "Address": "3366 Third ave, Los gatos, CA 55555",
+    "Email": "mike@email.com",
+    "ContactNo": "555-666-7777"
+  }
+]

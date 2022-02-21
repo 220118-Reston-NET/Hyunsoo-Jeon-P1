@@ -1,0 +1,538 @@
+2022-01-26 22:29:52.255 -08:00 [INF] Displaying Adding customer Menu to user
+2022-01-26 22:29:58.072 -08:00 [INF] Displaying Adding customer Menu to user
+2022-01-26 22:30:05.392 -08:00 [INF] Displaying Adding customer Menu to user
+2022-01-26 22:30:29.766 -08:00 [INF] Displaying Adding customer Menu to user
+2022-01-26 22:30:38.617 -08:00 [INF] Displaying Adding customer Menu to user
+2022-01-26 22:30:39.682 -08:00 [INF] Adding Customer 
+Name: Mike
+ Address: 3366 Third ave, Los gatos, CA 55555
+ Email: mike@email.com
+ Contact number: 555-666-7777
+2022-01-26 22:30:39.717 -08:00 [INF] Successful at adding customer!
+2022-01-26 22:30:42.621 -08:00 [INF] Displaying Search product Menu to user
+2022-01-26 22:30:50.091 -08:00 [INF] Displaying Adding product Menu to user
+2022-01-26 22:31:06.621 -08:00 [INF] Displaying Adding product Menu to user
+2022-01-26 22:31:09.756 -08:00 [INF] Displaying Adding product Menu to user
+2022-01-26 22:31:12.756 -08:00 [INF] Displaying Adding product Menu to user
+2022-01-26 22:31:17.211 -08:00 [INF] Displaying Adding product Menu to user
+2022-01-26 22:31:18.366 -08:00 [INF] Adding Product 
+Product Name: Tail light bulb
+ Quantity: 7
+ Location: L6
+ Price: 2
+2022-01-26 22:31:18.369 -08:00 [INF] Successful at adding Product!
+2022-01-26 22:31:23.136 -08:00 [INF] Displaying Search Customer Menu to user
+2022-01-26 22:31:32.870 -08:00 [INF] Displaying Search product Menu to user
+2022-01-26 22:31:47.705 -08:00 [INF] Exiting application
+2022-02-03 07:45:56.138 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-03 07:46:15.410 -08:00 [INF] Exiting application
+2022-02-03 07:53:12.109 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-03 07:53:23.132 -08:00 [INF] Exiting application
+2022-02-03 07:53:44.074 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-03 07:54:12.841 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-03 07:54:31.456 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-03 07:54:55.831 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-03 07:54:58.501 -08:00 [INF] Adding Customer 
+Name: Steven Rogers
+ Address: 3093 Main st, San Jose, CA 93333
+ Email: hyunsoo@email.com
+ Contact number: 555-111-2222
+2022-02-03 07:54:59.146 -08:00 [INF] Successful at adding customer!
+2022-02-03 07:55:03.601 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-03 07:55:14.895 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-03 07:55:23.880 -08:00 [INF] Exiting application
+2022-02-03 07:57:06.902 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-03 07:57:14.925 -08:00 [INF] Exiting application
+2022-02-03 08:01:31.559 -08:00 [INF] Displaying Search product Menu to user
+2022-02-03 08:06:53.784 -08:00 [INF] Exiting application
+2022-02-03 08:18:52.474 -08:00 [INF] Exiting application
+2022-02-03 08:19:12.123 -08:00 [INF] Displaying Search product Menu to user
+2022-02-03 08:19:29.476 -08:00 [INF] Displaying Search product Menu to user
+2022-02-03 08:19:40.111 -08:00 [INF] Exiting application
+2022-02-03 08:27:56.850 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-03 08:28:04.452 -08:00 [INF] Exiting application
+2022-02-03 09:07:17.629 -08:00 [INF] Exiting application
+2022-02-03 09:07:53.900 -08:00 [INF] Exiting application
+2022-02-03 09:08:58.308 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:09:29.596 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:10:10.155 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:10:13.891 -08:00 [INF] Adding Store 
+Name: Car Parts3
+ Address: 8888 Stevens creek blvd, San Jose, CA 94646
+2022-02-03 09:10:14.524 -08:00 [WRN] Failed to add Product due to reaching total capacity (5)
+2022-02-03 09:10:22.485 -08:00 [INF] Exiting application
+2022-02-03 09:13:13.890 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:13:24.163 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:13:29.923 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:13:53.098 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:13:54.643 -08:00 [INF] Adding Store 
+ID: 0 
+Name: Car Parts3
+ Address: 8888 Stevens creek blvd, San Jose, CA 94645
+2022-02-03 09:13:55.152 -08:00 [WRN] Failed to add Product due to reaching total capacity (5)
+2022-02-03 09:16:43.887 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:16:49.151 -08:00 [INF] Adding Store 
+ID: 0 
+Name: Car Parts3
+ Address: 8888 Stevens creek blvd, San Jose, CA 94645
+2022-02-03 09:16:49.177 -08:00 [WRN] Failed to add Product due to reaching total capacity (5)
+2022-02-03 09:18:24.941 -08:00 [INF] Exiting application
+2022-02-03 09:19:05.697 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:19:07.075 -08:00 [INF] Adding Store 
+ID: 0 
+Name: All parts 1
+ Address: 7777 Main St, San Jose, CA 77777
+2022-02-03 09:19:07.536 -08:00 [WRN] Failed to add Product due to reaching total capacity (5)
+2022-02-03 09:20:34.239 -08:00 [INF] Exiting application
+2022-02-03 09:20:39.386 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:20:47.664 -08:00 [INF] Displaying Adding Store Menu to user
+2022-02-03 09:20:51.550 -08:00 [INF] Adding Store 
+ID: 0 
+Name: Car parts3
+ Address: 7777 Main St, San Jose, CA 77777
+2022-02-03 09:20:52.124 -08:00 [INF] Successful at adding Product!
+2022-02-03 09:20:56.079 -08:00 [INF] Exiting application
+2022-02-03 09:26:25.358 -08:00 [INF] Displaying Search store Menu to user
+2022-02-03 09:26:38.900 -08:00 [INF] Exiting application
+2022-02-07 09:26:45.743 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-07 09:27:08.435 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-07 09:30:13.908 -08:00 [INF] Exiting application
+2022-02-07 09:30:23.616 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-07 09:58:33.238 -08:00 [INF] Exiting application
+2022-02-07 12:15:09.404 -08:00 [INF] Displaying Adding product Menu to user
+2022-02-07 12:15:42.161 -08:00 [INF] Exiting application
+2022-02-07 12:15:48.403 -08:00 [INF] Displaying Search product Menu to user
+2022-02-07 12:16:15.505 -08:00 [INF] Exiting application
+2022-02-07 12:31:30.603 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:31:38.056 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:31:43.965 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:32:04.275 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:32:05.416 -08:00 [INF] Adding Inventory 
+Inventory ID : 1
+ Quantity : 9
+2022-02-07 12:32:06.114 -08:00 [WRN] Failed to add Inventory
+2022-02-07 12:34:08.594 -08:00 [INF] Exiting application
+2022-02-07 12:34:15.542 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:34:19.620 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:34:21.959 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:34:26.414 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 12:34:27.929 -08:00 [INF] Adding Inventory 
+Inventory ID : 1
+ Quantity : 9
+2022-02-07 12:34:28.633 -08:00 [INF] Successful at adding Inventory!
+2022-02-07 12:34:49.543 -08:00 [INF] Exiting application
+2022-02-07 12:35:30.946 -08:00 [INF] Displaying Search product Menu to user
+2022-02-07 12:35:40.588 -08:00 [INF] Displaying Search product Menu to user
+2022-02-07 12:35:52.019 -08:00 [INF] Displaying Search product Menu to user
+2022-02-07 12:35:59.728 -08:00 [INF] Exiting application
+2022-02-07 13:37:31.025 -08:00 [INF] Exiting application
+2022-02-07 13:40:51.800 -08:00 [INF] Exiting application
+2022-02-07 13:40:59.389 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-07 13:41:46.054 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-07 13:42:25.531 -08:00 [INF] Exiting application
+2022-02-07 13:45:57.781 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-07 13:46:08.278 -08:00 [INF] Exiting application
+2022-02-07 13:51:34.423 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-07 13:52:06.430 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-07 13:52:15.205 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-07 13:52:35.949 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-07 13:52:55.404 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-07 13:52:57.009 -08:00 [INF] Adding Customer 
+Customer ID: 0 
+Customer Name: Thor
+ Customer Address: Asgard, planet 78943
+ Customer Email: godofthunder@email.com
+ Customer Contact number: 444-666-7894
+2022-02-07 13:52:57.699 -08:00 [INF] Successful at adding customer!
+2022-02-07 13:53:05.799 -08:00 [INF] Displaying Search product Menu to user
+2022-02-07 13:53:17.844 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-07 13:53:34.794 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-07 13:53:51.519 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-07 13:54:01.958 -08:00 [INF] Exiting application
+2022-02-07 13:54:16.931 -08:00 [INF] Displaying Adding product Menu to user
+2022-02-07 13:54:50.078 -08:00 [INF] Displaying Adding product Menu to user
+2022-02-07 13:54:56.469 -08:00 [INF] Displaying Adding product Menu to user
+2022-02-07 13:54:57.563 -08:00 [INF] Adding Product 
+Product ID: 0 
+Product Name: Tires
+ Price: 110
+2022-02-07 13:54:58.303 -08:00 [INF] Successful at adding Product!
+2022-02-07 13:55:08.617 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 13:55:15.233 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 13:55:23.467 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 13:55:26.273 -08:00 [INF] Adding Inventory 
+Inventory ID : 1
+ Quantity : 30
+2022-02-07 13:55:26.304 -08:00 [INF] Successful at adding Inventory!
+2022-02-07 13:55:28.028 -08:00 [INF] Exiting application
+2022-02-07 13:55:38.140 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-07 13:57:14.871 -08:00 [INF] Exiting application
+2022-02-07 13:57:21.324 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-07 13:58:02.691 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 13:58:08.676 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 13:58:11.090 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 13:58:15.441 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-07 13:58:16.911 -08:00 [INF] Adding Inventory 
+Inventory ID : 1
+ Quantity : 14
+2022-02-07 13:58:16.960 -08:00 [INF] Successful at adding Inventory!
+2022-02-07 13:58:18.201 -08:00 [INF] Exiting application
+2022-02-07 13:58:24.563 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-07 13:58:35.451 -08:00 [INF] Exiting application
+2022-02-08 11:40:00.394 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-08 11:40:16.532 -08:00 [INF] Exiting application
+2022-02-08 12:34:32.881 -08:00 [INF] Exiting application
+2022-02-08 12:35:34.082 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-08 12:35:42.434 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-08 12:35:54.239 -08:00 [INF] Exiting application
+2022-02-08 12:37:53.403 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-08 12:38:05.220 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-08 12:38:50.161 -08:00 [INF] Exiting application
+2022-02-08 12:38:56.883 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-08 12:39:01.726 -08:00 [INF] Exiting application
+2022-02-08 12:43:07.505 -08:00 [INF] Displaying Search product Menu to user
+2022-02-08 12:43:20.493 -08:00 [INF] Exiting application
+2022-02-09 10:12:41.841 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-09 10:12:54.527 -08:00 [INF] Exiting application
+2022-02-09 10:26:43.422 -08:00 [INF] Exiting application
+2022-02-09 11:12:28.167 -08:00 [INF] Exiting application
+2022-02-09 11:27:20.809 -08:00 [INF] Exiting application
+2022-02-09 12:25:15.109 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-09 12:25:55.696 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-09 12:26:58.861 -08:00 [INF] Exiting application
+2022-02-09 12:33:06.720 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-09 12:48:11.691 -08:00 [INF] Exiting application
+2022-02-09 12:48:24.248 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-09 12:49:01.145 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-09 12:49:09.500 -08:00 [INF] Exiting application
+2022-02-09 13:18:17.303 -08:00 [INF] Exiting application
+2022-02-09 13:31:06.136 -08:00 [INF] Exiting application
+2022-02-09 13:32:20.416 -08:00 [INF] Exiting application
+2022-02-09 13:51:59.002 -08:00 [INF] Exiting application
+2022-02-10 08:19:55.394 -08:00 [INF] Exiting application
+2022-02-10 08:20:11.760 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-10 08:20:20.293 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-10 08:20:39.312 -08:00 [INF] Exiting application
+2022-02-10 08:28:33.010 -08:00 [INF] Exiting application
+2022-02-10 08:39:26.059 -08:00 [INF] Exiting application
+2022-02-10 08:39:37.085 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-10 08:39:58.352 -08:00 [INF] Exiting application
+2022-02-10 08:40:07.774 -08:00 [INF] Displaying Search product Menu to user
+2022-02-10 08:47:41.834 -08:00 [INF] Exiting application
+2022-02-10 08:49:50.413 -08:00 [INF] Exiting application
+2022-02-10 08:53:06.236 -08:00 [INF] Exiting application
+2022-02-10 08:57:39.759 -08:00 [INF] Exiting application
+2022-02-10 08:57:50.514 -08:00 [INF] Exiting application
+2022-02-10 09:04:24.860 -08:00 [INF] Exiting application
+2022-02-10 09:23:27.909 -08:00 [INF] Exiting application
+2022-02-10 10:10:26.232 -08:00 [INF] Exiting application
+2022-02-10 11:04:21.877 -08:00 [INF] Exiting application
+2022-02-10 11:39:27.753 -08:00 [INF] Exiting application
+2022-02-10 11:42:18.375 -08:00 [INF] Exiting application
+2022-02-10 12:18:55.256 -08:00 [INF] Exiting application
+2022-02-10 12:19:24.401 -08:00 [INF] Exiting application
+2022-02-11 11:32:56.181 -08:00 [INF] Exiting application
+2022-02-11 11:58:36.357 -08:00 [INF] Exiting application
+2022-02-11 12:05:12.775 -08:00 [INF] Exiting application
+2022-02-11 13:02:52.883 -08:00 [INF] Exiting application
+2022-02-11 13:07:22.369 -08:00 [INF] Exiting application
+2022-02-11 13:34:27.641 -08:00 [INF] Exiting application
+2022-02-11 14:16:46.167 -08:00 [INF] Exiting application
+2022-02-11 14:16:59.501 -08:00 [INF] Displaying Adding product Menu to user
+2022-02-11 14:17:11.274 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-11 14:17:25.029 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-11 14:17:27.879 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-11 14:17:33.233 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-11 14:17:34.704 -08:00 [INF] Adding Inventory 
+Inventory ID : 1
+ Store ID: 3 Product ID: 1 
+ Quantity : 10
+2022-02-11 14:17:35.336 -08:00 [INF] Successful at adding Inventory!
+2022-02-11 14:18:16.554 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-11 14:18:20.948 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-11 14:18:24.024 -08:00 [INF] Displaying Adding Inventory Menu to user
+2022-02-11 14:18:25.313 -08:00 [INF] Adding Inventory 
+Inventory ID : 1
+ Store ID: 3 Product ID: 2 
+ Quantity : 6
+2022-02-11 14:18:25.344 -08:00 [INF] Successful at adding Inventory!
+2022-02-11 14:19:35.168 -08:00 [INF] Displaying Search product Menu to user
+2022-02-11 14:20:54.742 -08:00 [INF] Exiting application
+2022-02-11 15:00:42.202 -08:00 [INF] Exiting application
+2022-02-11 15:20:36.811 -08:00 [INF] Exiting application
+2022-02-11 15:22:49.785 -08:00 [INF] Exiting application
+2022-02-14 08:34:00.614 -08:00 [INF] Exiting application
+2022-02-14 08:38:37.450 -08:00 [INF] Exiting application
+2022-02-14 09:10:38.512 -08:00 [INF] Exiting application
+2022-02-14 09:15:47.494 -08:00 [INF] Exiting application
+2022-02-14 09:16:15.709 -08:00 [INF] Exiting application
+2022-02-14 09:18:45.407 -08:00 [INF] Exiting application
+2022-02-14 09:20:37.742 -08:00 [INF] Exiting application
+2022-02-14 09:21:35.341 -08:00 [INF] Exiting application
+2022-02-14 09:26:15.133 -08:00 [INF] Exiting application
+2022-02-14 09:29:25.257 -08:00 [INF] Exiting application
+2022-02-14 09:30:24.626 -08:00 [INF] Exiting application
+2022-02-14 09:41:05.826 -08:00 [INF] Exiting application
+2022-02-14 11:58:00.246 -08:00 [INF] Exiting application
+2022-02-14 12:01:38.840 -08:00 [INF] Exiting application
+2022-02-14 12:08:09.391 -08:00 [INF] Exiting application
+2022-02-14 12:29:19.489 -08:00 [INF] Exiting application
+2022-02-14 12:40:56.968 -08:00 [INF] Exiting application
+2022-02-14 13:03:37.095 -08:00 [INF] Exiting application
+2022-02-14 13:08:41.096 -08:00 [INF] Exiting application
+2022-02-14 13:15:50.781 -08:00 [INF] Exiting application
+2022-02-14 13:16:35.601 -08:00 [INF] Exiting application
+2022-02-14 13:39:01.658 -08:00 [INF] Exiting application
+2022-02-14 13:54:08.447 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-14 13:54:18.090 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-14 13:54:19.409 -08:00 [INF] Exiting application
+2022-02-14 14:03:18.342 -08:00 [INF] Exiting application
+2022-02-14 15:13:04.491 -08:00 [INF] Exiting application
+2022-02-14 15:13:17.827 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-14 15:13:27.934 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-14 15:13:37.594 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-14 15:14:51.829 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-14 15:15:01.924 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-14 15:15:03.919 -08:00 [INF] Adding Customer 
+Customer ID: 0 
+Customer Name: Bruce Wayne
+ Customer Address: 1111 Main St, Gotham, GT, 10100
+ Customer Email: batman@email.com
+ Customer Contact number: 888-888-8888
+2022-02-14 15:15:04.486 -08:00 [WRN] Failed to add Customer due to reaching total capacity (5)
+2022-02-14 15:15:21.483 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-14 15:15:30.800 -08:00 [INF] Exiting application
+2022-02-14 15:16:36.139 -08:00 [INF] Exiting application
+2022-02-15 12:06:27.484 -08:00 [INF] User enter customer ID 
+0
+2022-02-15 12:06:40.128 -08:00 [INF] User enter the store id and procede to order details
+0
+2022-02-15 12:06:50.388 -08:00 [INF] User enter the product name and quantity and to cart 
+
+2022-02-15 12:07:10.593 -08:00 [INF] User process Order 
+System.Collections.Generic.List`1[Models.LineItems]
+2022-02-15 12:07:10.710 -08:00 [INF] Success order!
+2022-02-15 12:07:20.748 -08:00 [INF] User enter the store id and procede to order details
+1
+2022-02-15 12:07:40.922 -08:00 [INF] Displaying Search product Menu to user
+2022-02-15 12:07:44.552 -08:00 [INF] User enter the product name to search product detail
+Coolant
+2022-02-15 12:07:53.222 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-15 12:08:00.992 -08:00 [INF] User enter the customer name 
+Hyunsoo
+2022-02-15 12:08:14.012 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-15 12:08:16.382 -08:00 [INF] User enter the customer name 
+0
+2022-02-15 12:08:23.687 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-15 12:08:26.507 -08:00 [INF] User enter the customer id to search customer
+1
+2022-02-15 12:08:33.182 -08:00 [INF] Exiting application
+2022-02-15 19:52:16.153 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-15 19:52:38.035 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-15 19:52:46.585 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-15 19:54:21.984 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-15 19:54:28.389 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-15 19:54:29.844 -08:00 [INF] Adding Customer 
+Customer ID: 0 
+Customer Name: Hanson Jeon
+ Customer Address: 4343 2nd street, Giloy, CA 98777
+ Customer Email: hanson@email.com
+ Customer Contact number: 888-999-7777
+2022-02-15 19:54:30.511 -08:00 [INF] Successful at adding customer!
+2022-02-15 19:54:37.449 -08:00 [INF] User enter customer ID 
+0
+2022-02-15 19:54:45.039 -08:00 [INF] Exiting application
+2022-02-15 19:55:47.500 -08:00 [INF] Exiting application
+2022-02-15 19:55:56.919 -08:00 [INF] User enter customer ID 
+0
+2022-02-15 19:56:56.723 -08:00 [INF] User enter customer ID 
+0
+2022-02-15 19:58:40.389 -08:00 [INF] Displaying Search product Menu to user
+2022-02-15 19:58:46.296 -08:00 [INF] User enter the product name to search product detail
+Coolant
+2022-02-15 19:58:59.721 -08:00 [INF] Exiting application
+2022-02-15 19:59:48.383 -08:00 [INF] Displaying Search product Menu to user
+2022-02-15 19:59:56.481 -08:00 [INF] User enter the product name to search product detail
+Handle Cover
+2022-02-15 20:00:05.886 -08:00 [INF] Exiting application
+2022-02-15 20:00:18.128 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-15 20:00:22.820 -08:00 [INF] User enter the customer name 
+Hanson
+2022-02-15 20:00:45.515 -08:00 [INF] Exiting application
+2022-02-15 20:00:52.673 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-15 20:00:56.585 -08:00 [INF] User enter the customer id to search customer
+6
+2022-02-15 20:01:14.795 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-15 20:01:33.185 -08:00 [INF] User enter the store id to check inventory 
+1
+2022-02-15 20:02:04.804 -08:00 [INF] Exiting application
+2022-02-15 20:02:15.922 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:02:16.970 -08:00 [INF] User view orders
+
+2022-02-15 20:02:25.235 -08:00 [INF] Exiting application
+2022-02-15 20:15:17.626 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:15:19.814 -08:00 [INF] User view orders
+
+2022-02-15 20:15:24.344 -08:00 [INF] Exiting application
+2022-02-15 20:15:47.115 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:15:50.234 -08:00 [INF] User view orders
+
+2022-02-15 20:42:27.346 -08:00 [INF] Exiting application
+2022-02-15 20:42:36.784 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:42:39.242 -08:00 [INF] User enter Store ID 
+0
+2022-02-15 20:42:47.461 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:42:49.771 -08:00 [INF] User enter Store ID 
+2
+2022-02-15 20:43:21.136 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:43:22.351 -08:00 [INF] Exiting application
+2022-02-15 20:43:29.688 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:43:31.981 -08:00 [INF] User enter Store ID 
+0
+2022-02-15 20:43:40.546 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:43:41.897 -08:00 [INF] Exiting application
+2022-02-15 20:43:52.773 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-15 20:43:55.276 -08:00 [INF] User view orders
+
+2022-02-15 20:44:04.771 -08:00 [INF] Exiting application
+2022-02-15 20:45:14.582 -08:00 [INF] User enter customer ID 
+0
+2022-02-15 20:45:35.190 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-15 20:45:41.580 -08:00 [INF] User enter the store id to check inventory 
+3
+2022-02-15 20:46:26.761 -08:00 [INF] User enter the inventory ID to precess restock 
+0
+2022-02-15 20:46:37.965 -08:00 [INF] User enter the inventory ID to precess restock 
+3
+2022-02-15 20:46:43.815 -08:00 [INF] User enter the quantity to restock 
+2
+2022-02-15 20:46:43.882 -08:00 [INF] Restock Success 
+
+2022-02-15 20:46:48.090 -08:00 [INF] Exiting application
+2022-02-16 07:09:34.470 -08:00 [INF] Exiting application
+2022-02-16 07:17:21.520 -08:00 [INF] User enter the inventory ID to precess restock 
+0
+2022-02-16 07:17:31.328 -08:00 [INF] User enter the quantity to restock 
+11
+2022-02-16 07:17:31.359 -08:00 [INF] Restock Success 
+
+2022-02-16 07:17:39.293 -08:00 [INF] Exiting application
+2022-02-16 07:27:24.322 -08:00 [INF] User enter customer ID 
+0
+2022-02-16 07:27:31.100 -08:00 [INF] User enter the store id and procede to order details
+0
+2022-02-16 07:27:56.900 -08:00 [INF] Exiting application
+2022-02-16 07:40:52.531 -08:00 [INF] User enter customer ID 
+0
+2022-02-16 07:41:17.970 -08:00 [INF] User enter customer ID 
+6
+2022-02-16 07:41:22.605 -08:00 [INF] User enter the store id and procede to order details
+0
+2022-02-16 07:41:35.730 -08:00 [INF] User enter the product name and quantity and to cart 
+
+2022-02-16 07:42:13.094 -08:00 [INF] User enter the product name and quantity and to cart 
+
+2022-02-16 07:42:21.974 -08:00 [INF] User process Order 
+System.Collections.Generic.List`1[Models.LineItems]
+2022-02-16 07:42:22.133 -08:00 [INF] Success order!
+2022-02-16 07:42:48.194 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-16 07:42:53.054 -08:00 [INF] User view orders
+
+2022-02-16 07:43:03.224 -08:00 [INF] Exiting application
+2022-02-16 07:43:34.126 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-16 07:43:47.864 -08:00 [INF] User enter the store id to check inventory 
+3
+2022-02-16 07:43:56.923 -08:00 [INF] Exiting application
+2022-02-16 07:53:38.248 -08:00 [INF] Exiting application
+2022-02-16 07:53:48.162 -08:00 [INF] Displaying Search Customer Menu to user
+2022-02-16 07:53:50.740 -08:00 [INF] User enter the customer id to search customer
+1
+2022-02-16 07:54:03.489 -08:00 [INF] Exiting application
+2022-02-16 07:55:25.467 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 07:55:29.154 -08:00 [INF] User enter the product name to search product detail
+Cool
+2022-02-16 07:55:35.409 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 07:55:38.469 -08:00 [INF] User enter the product name to search product detail
+brea
+2022-02-16 07:55:43.510 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 07:55:47.244 -08:00 [INF] User enter the product name to search product detail
+Break
+2022-02-16 07:55:51.939 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 07:55:58.900 -08:00 [INF] User enter the product name to search product detail
+Brake
+2022-02-16 07:56:10.599 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 07:56:16.464 -08:00 [INF] User enter the product name to search product detail
+Handle
+2022-02-16 07:56:26.844 -08:00 [INF] Exiting application
+2022-02-16 08:05:09.503 -08:00 [INF] User enter customer ID 
+0
+2022-02-16 08:05:27.996 -08:00 [INF] User enter the store id and procede to order details
+0
+2022-02-16 08:05:42.771 -08:00 [INF] User enter the product name and quantity and to cart 
+
+2022-02-16 08:05:59.841 -08:00 [INF] Exiting application
+2022-02-16 08:16:09.709 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-16 08:16:16.113 -08:00 [INF] User enter the store id to check inventory 
+3
+2022-02-16 08:16:27.618 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 08:16:31.907 -08:00 [INF] User enter the product name to search product detail
+Cool
+2022-02-16 08:16:51.647 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-16 08:16:53.492 -08:00 [INF] User view orders
+
+2022-02-16 08:17:05.792 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-16 08:17:09.002 -08:00 [INF] User enter Store ID 
+0
+2022-02-16 08:17:12.513 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-16 08:17:15.107 -08:00 [INF] Exiting application
+2022-02-16 08:17:53.554 -08:00 [INF] Displaying Search store Menu to user
+2022-02-16 08:17:56.462 -08:00 [INF] User enter the store name to search store detail
+0
+2022-02-16 08:18:03.962 -08:00 [INF] Exiting application
+2022-02-16 08:18:31.804 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 08:18:37.366 -08:00 [INF] User enter the product name to search product detail
+Handle
+2022-02-16 08:19:09.782 -08:00 [INF] Exiting application
+2022-02-16 08:25:07.082 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-16 08:25:21.809 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-16 08:25:27.689 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-16 08:25:54.059 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-16 08:26:00.404 -08:00 [INF] Displaying Adding customer Menu to user
+2022-02-16 08:26:07.274 -08:00 [INF] Adding Customer 
+Customer ID: 0 
+Customer Name: Scott Lang
+ Customer Address: 101 Union squre, Sanfracsico, CA 99999
+ Customer Email: antman@email.com
+ Customer Contact number: 222-222-2222
+2022-02-16 08:26:07.892 -08:00 [INF] Successful at adding customer!
+2022-02-16 08:26:44.504 -08:00 [INF] User enter customer ID 
+0
+2022-02-16 08:27:15.778 -08:00 [INF] User enter the store id and procede to order details
+0
+2022-02-16 08:27:28.993 -08:00 [INF] User enter the product name and quantity and to cart 
+
+2022-02-16 08:27:48.313 -08:00 [INF] User enter the product name and quantity and to cart 
+
+2022-02-16 08:27:58.363 -08:00 [INF] User process Order 
+System.Collections.Generic.List`1[Models.LineItems]
+2022-02-16 08:27:58.526 -08:00 [INF] Success order!
+2022-02-16 08:28:30.733 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-16 08:28:33.718 -08:00 [INF] User view orders
+
+2022-02-16 08:28:43.664 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-16 08:28:45.433 -08:00 [INF] User enter Store ID 
+0
+2022-02-16 08:28:56.173 -08:00 [INF] Displaying Search Order Menu to user
+2022-02-16 08:29:04.437 -08:00 [INF] Displaying Search invetory store Menu to user
+2022-02-16 08:29:13.813 -08:00 [INF] User enter the store id to check inventory 
+1
+2022-02-16 08:29:45.718 -08:00 [INF] User enter the inventory ID to precess restock 
+0
+2022-02-16 08:29:54.718 -08:00 [INF] User enter the quantity to restock 
+12
+2022-02-16 08:29:54.763 -08:00 [INF] Restock Success 
+
+2022-02-16 08:29:59.233 -08:00 [INF] Exiting application
+2022-02-16 08:30:30.419 -08:00 [INF] Displaying Search product Menu to user
+2022-02-16 08:30:37.168 -08:00 [INF] User enter the product name to search product detail
+Cool

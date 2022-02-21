@@ -1,0 +1,26 @@
+[
+  {
+    "ProductName": "Coolant",
+    "Price": 15,
+    "Location": "L1",
+    "Quantity": 10
+  },
+  {
+    "ProductName": "Coolant",
+    "Price": 15,
+    "Location": "L1",
+    "Quantity": 10
+  },
+  {
+    "ProductName": "Coolant",
+    "Price": 15,
+    "Location": "L1",
+    "Quantity": 10
+  },
+  {
+    "ProductName": "Tail light bulb",
+    "Price": 2,
+    "Location": "L6",
+    "Quantity": 7
+  }
+]
