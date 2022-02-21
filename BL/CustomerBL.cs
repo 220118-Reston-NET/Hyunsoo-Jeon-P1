@@ -30,6 +30,12 @@ namespace BL
         {
             return _repo.GetAllCustomer();
         }
+
+        public async Task<List<Customer>> GetAllCustomerAsync()
+        {
+            return await _repo.GetAllCustomerAsync();
+        }
+
         public List<Customer> GetCustomerByCustomerID(int p_customerID)
         {
             return _repo.GetCustomerByCustomerID(p_customerID);

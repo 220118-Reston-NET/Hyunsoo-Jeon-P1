@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BL;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Models;
 
 namespace StoreApi.Controllers
 {
@@ -11,30 +13,65 @@ namespace StoreApi.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        // GET: api/Customer
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private ICustomerBL _customerBL;
+        public CustomerController(ICustomerBL p_customerBL)
         {
-            return new string[] { "value1", "value2" };
+            _customerBL = p_customerBL;
+        }
+        
+
+        // GET: api/Customer
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllCustomerAsync()
+        {
+
+            try
+            {
+                return Ok(await _customerBL.GetAllCustomerAsync());
+
+            }
+            catch (System.Exception)
+            {
+                
+                return NotFound();
+            }
         }
 
         // GET: api/Customer/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{customerName}")]
+        public async Task<IActionResult> SearchCustomerByName(string customerName)
         {
-            return "value";
+            try
+            {
+                return Ok(_customerBL.SearchCustomerByName(customerName));
+            }
+            catch (System.Exception)
+            {
+
+                return NotFound();
+            }
         }
 
         // POST: api/Customer
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("Add")]
+        public IActionResult AddCustomer([FromBody] Customer p_customer)
         {
+            try
+            {
+                return Created("Successfully added", _customerBL.AddCustomer(p_customer));
+            }
+            catch (System.Exception ex)
+            {
+                
+                return Conflict(ex.Message);
+            }
         }
 
         // PUT: api/Customer/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("Update/{id}")]
+        public void Update(int id, [FromBody] string p_customer)
         {
+
         }
 
         // DELETE: api/Customer/5

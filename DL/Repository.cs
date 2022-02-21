@@ -129,5 +129,11 @@ namespace DL
             throw new NotImplementedException();
 
         }
+
+
+        public Task<List<Customer>> GetAllCustomerAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

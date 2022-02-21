@@ -97,6 +97,36 @@ namespace DL
             return listOfCustomer;
         }
 
+        public async Task<List<Customer>> GetAllCustomerAsync()
+        {
+            List<Customer> listOfCustomer = new List<Customer>();
+
+            string sqlQuery = @"select * from Customer";
+
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                await con.OpenAsync();
+
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                while (reader.Read())
+                {
+                    listOfCustomer.Add(new Customer()
+                    {
+                        CustomerID = reader.GetInt32(0),
+                        Name = reader.GetString(1),
+                        Address = reader.GetString(2),
+                        Email = reader.GetString(3),
+                        ContactNo = reader.GetString(4)
+                    });
+                }
+            }
+            return listOfCustomer;
+        }
+
+
         public Inventory AddInventory(Inventory p_inventory)
         {
             string sqlQuery = @"insert into Inventory
@@ -504,7 +534,6 @@ namespace DL
                 command.ExecuteNonQuery();
             }
         }
-
 
 
     }
