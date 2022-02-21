@@ -1,3 +1,4 @@
 bin
 obj
 StoreUI/appsettings.json
+StoreApi/appsettings.json
