@@ -14,9 +14,11 @@ namespace StoreApi.Controllers
     public class CustomerController : ControllerBase
     {
         private ICustomerBL _customerBL;
-        public CustomerController(ICustomerBL p_customerBL)
+        private IOrderBL _orderBL;
+        public CustomerController(ICustomerBL p_customerBL, IOrderBL p_orderBL)
         {
             _customerBL = p_customerBL;
+            _orderBL = p_orderBL;
         }
         
 
@@ -39,11 +41,11 @@ namespace StoreApi.Controllers
 
         // GET: api/Customer/5
         [HttpGet("{customerName}")]
-        public async Task<IActionResult> SearchCustomerByName(string customerName)
+        public async Task<IActionResult> SearchCustomerByName(string p_customerName)
         {
             try
             {
-                return Ok(_customerBL.SearchCustomerByName(customerName));
+                return Ok(_customerBL.SearchCustomerByName(p_customerName));
             }
             catch (System.Exception)
             {
@@ -51,6 +53,22 @@ namespace StoreApi.Controllers
                 return NotFound();
             }
         }
+
+        // GET: api/Customer/5
+        // [HttpGet("{id}")]
+        // public IActionResult SearchCustomerById(int p_customerID)
+        // {
+        //     try
+        //     {
+        //         return Ok(_customerBL.GetCustomerByCustomerID(p_customerID));
+        //     }
+        //     catch (System.Exception)
+        //     {
+
+        //         return NotFound();
+        //     }
+        // }
+
 
         // POST: api/Customer
         [HttpPost("Add")]
@@ -78,6 +96,35 @@ namespace StoreApi.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        // POST: api/Order
+        // [HttpPost("AddOrder")]
+        // public IActionResult AddOrder([FromBody] Order p_order)
+        // {
+        //     try
+        //     {
+        //         return Created("Successfully added Order", _orderBL.PlaceOrder(p_order));
+        //     }
+        //     catch (System.Exception ex)
+        //     {
+
+        //         return Conflict(ex.Message);
+        //     }
+        // }
+
+        [HttpGet("Order/{id}")]
+        public IActionResult SearchCustomerOrderByCustomerId(int p_customerID)
+        {
+            try
+            {
+                return Ok(_orderBL.GetAllOrdersByID(p_customerID));
+            }
+            catch (System.Exception)
+            {
+
+                return NotFound();
+            }
         }
     }
 }
