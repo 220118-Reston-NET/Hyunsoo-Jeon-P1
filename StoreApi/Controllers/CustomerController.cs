@@ -40,12 +40,12 @@ namespace StoreApi.Controllers
         }
 
         // GET: api/Customer/5
-        [HttpGet("{customerName}")]
-        public async Task<IActionResult> SearchCustomerByName(string p_customerName)
+        [HttpGet]
+        public IActionResult SearchCustomerByName([FromQuery] string customerName)
         {
             try
             {
-                return Ok(_customerBL.SearchCustomerByName(p_customerName));
+                return Ok(_customerBL.SearchCustomerByName(customerName));
             }
             catch (System.Exception)
             {
@@ -72,11 +72,11 @@ namespace StoreApi.Controllers
 
         // POST: api/Customer
         [HttpPost("Add")]
-        public IActionResult AddCustomer([FromBody] Customer p_customer)
+        public IActionResult AddCustomer([FromBody] Customer customer)
         {
             try
             {
-                return Created("Successfully added", _customerBL.AddCustomer(p_customer));
+                return Created("Successfully added", _customerBL.AddCustomer(customer));
             }
             catch (System.Exception ex)
             {
@@ -87,7 +87,7 @@ namespace StoreApi.Controllers
 
         // PUT: api/Customer/5
         [HttpPut("Update/{id}")]
-        public void Update(int id, [FromBody] string p_customer)
+        public void Update(int id, [FromBody] string customer)
         {
 
         }
