@@ -21,7 +21,7 @@ namespace StoreApi.Controllers
         }
 
         // GET: api/Admin
-        [HttpGet("OrderHistory")]
+        [HttpGet("OrderHistoryByStore")]
         public IActionResult GetAllOrdersByStoreId([FromQuery] int storeId)
         {
             try
