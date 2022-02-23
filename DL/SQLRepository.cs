@@ -32,6 +32,25 @@ namespace DL
             return p_customer;
         }
 
+        public Order AddOrder(Order p_order)
+        {
+            string sqlQuery = @"insert into Orders
+                            values(@orderTotalPrice, @storeId, @customerId)";
+
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                con.Open();
+
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+                command.Parameters.AddWithValue("@orderTotalPrice", p_order.TotalPrice);
+                command.Parameters.AddWithValue("@storeId", p_order.StoreID);
+                command.Parameters.AddWithValue("@customerId", p_order.CustomerID);
+
+                command.ExecuteNonQuery();
+            }
+            return p_order;
+        }
+
         public Product AddProduct(Product p_product)
         {
             string sqlQuery = @"insert into Product

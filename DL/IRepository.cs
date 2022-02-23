@@ -5,6 +5,7 @@ namespace DL
     public interface IRepository
     {
         Customer AddCustomer(Customer p_customer);
+        Order AddOrder(Order p_order);
         List<Customer> GetAllCustomer();
 
         List<Customer> GetCustomerByCustomerID(int p_customerID);

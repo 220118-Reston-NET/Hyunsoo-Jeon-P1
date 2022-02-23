@@ -82,21 +82,6 @@ namespace StoreApi.Controllers
         {
         }
 
-        // POST: api/Order
-        // [HttpPost("AddOrder")]
-        // public IActionResult AddOrder([FromBody] Order p_order)
-        // {
-        //     try
-        //     {
-        //         return Created("Successfully added Order", _orderBL.PlaceOrder(p_order));
-        //     }
-        //     catch (System.Exception ex)
-        //     {
-
-        //         return Conflict(ex.Message);
-        //     }
-        // }
-
         [HttpGet("OrderHistory")]
         public IActionResult GetAllOrdersByCustomerID([FromQuery] int customerID)
         {
@@ -108,6 +93,21 @@ namespace StoreApi.Controllers
             {
 
                 return NotFound();
+            }
+        }
+
+        // POST: api/Customer
+        [HttpPost("AddOrder")]
+        public IActionResult AddOrder([FromBody] Order order)
+        {
+            try
+            {
+                return Created("Successfully added", _orderBL.AddOrder(order));
+            }
+            catch (System.Exception ex)
+            {
+
+                return Conflict(ex.Message);
             }
         }
     }

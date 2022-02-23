@@ -135,5 +135,10 @@ namespace DL
         {
             throw new NotImplementedException();
         }
+
+        public Order AddOrder(Order p_order)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

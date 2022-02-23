@@ -36,5 +36,26 @@ namespace BL
         {
             throw new NotImplementedException();
         }
+
+        public Order AddOrder(Order p_order)
+        {
+            List<Order> listOfOrder = _repo.GetAllOrder();
+            return _repo.AddOrder(p_order);
+        }
+
+        public Customer AddCustomer(Customer p_customer)
+        {
+            List<Customer> listOfCustomer = _repo.GetAllCustomer();
+
+            if (listOfCustomer.Count < 10)
+            {
+                return _repo.AddCustomer(p_customer);
+            }
+            else
+            {
+                throw new Exception("You cannot have more than 5 customers!");
+            }
+
+        }
     }
 }

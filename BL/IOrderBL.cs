@@ -11,5 +11,6 @@ namespace BL
         List<Order> GetAllOrdersByID(int p_orderID);
         List<Order> GetAllOrdersByStoreID(int p_storeId);
         List<Order> GetAllOrdersByCustomerID(int p_customerID);
+        Order AddOrder(Order p_order);
     }
 }
