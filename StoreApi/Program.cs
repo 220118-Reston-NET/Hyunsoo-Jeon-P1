@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IRepository>(repo => new SQLRepository(builder.Configuration.GetConnectionString("Reference2DB")));
 builder.Services.AddScoped<ICustomerBL, CustomerBL>();
 builder.Services.AddScoped<IOrderBL, OrderBL>();
+builder.Services.AddScoped<IInventoryBL, InventoryBL>();
 
 var app = builder.Build();
 
