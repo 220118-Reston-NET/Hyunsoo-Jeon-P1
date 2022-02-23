@@ -22,14 +22,19 @@ namespace BL
             _repo.PlaceOrder(p_storeId, p_customerID, p_totalPrice, p_lineItem);
         }
 
-        public List<Order> GetAllOrdersByID(int p_customerID)
-        {
-            return _repo.GetAllOrdersByID(p_customerID);
+        public List<Order> GetAllOrdersByCustomerID(int p_customerID)
+        {   
+            return _repo.GetAllOrdersByCustomerID(p_customerID);
         }
 
         public List<Order> GetAllOrdersByStoreID(int p_storeId)
         {
             return _repo.GetAllOrdersByStoreID(p_storeId);
+        }
+
+        public List<Order> GetAllOrdersByID(int p_orderID)
+        {
+            throw new NotImplementedException();
         }
     }
 }

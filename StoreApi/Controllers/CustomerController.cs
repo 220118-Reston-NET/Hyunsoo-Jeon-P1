@@ -54,22 +54,6 @@ namespace StoreApi.Controllers
             }
         }
 
-        // GET: api/Customer/5
-        // [HttpGet("{id}")]
-        // public IActionResult SearchCustomerById(int p_customerID)
-        // {
-        //     try
-        //     {
-        //         return Ok(_customerBL.GetCustomerByCustomerID(p_customerID));
-        //     }
-        //     catch (System.Exception)
-        //     {
-
-        //         return NotFound();
-        //     }
-        // }
-
-
         // POST: api/Customer
         [HttpPost("Add")]
         public IActionResult AddCustomer([FromBody] Customer customer)
@@ -113,12 +97,12 @@ namespace StoreApi.Controllers
         //     }
         // }
 
-        [HttpGet("Order/{id}")]
-        public IActionResult SearchCustomerOrderByCustomerId(int p_customerID)
+        [HttpGet("OrderHistory")]
+        public IActionResult GetAllOrdersByCustomerID([FromQuery] int customerID)
         {
             try
             {
-                return Ok(_orderBL.GetAllOrdersByID(p_customerID));
+                return Ok(_orderBL.GetAllOrdersByCustomerID(customerID));
             }
             catch (System.Exception)
             {

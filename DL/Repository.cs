@@ -98,7 +98,7 @@ namespace DL
             throw new NotImplementedException();
         }
 
-        public List<Order> GetAllOrdersByID(int p_customerID)
+        public List<Order> GetAllOrdersByCustomerID(int p_customerID)
         {
             throw new NotImplementedException();
         }

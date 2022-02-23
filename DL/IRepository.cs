@@ -21,7 +21,7 @@ namespace DL
         Inventory AddInventory(Inventory p_inventory);
 
         List<Order> GetAllOrder();
-        List<Order> GetAllOrdersByID(int p_customerID);
+        List<Order> GetAllOrdersByCustomerID(int p_customerID);
 
         List<Product> GetAllproductDetailByStoreID(int p_storeId);
         void ReplenishInventory(int p_inventoryId, int p_qty);

@@ -10,5 +10,6 @@ namespace BL
 
         List<Customer> GetCustomerByCustomerID(int p_customerID);
         Task<List<Customer>> GetAllCustomerAsync();
+        //Task<Customer>SearchCustomerByNameAsync(string p_customerName);
     }
 }

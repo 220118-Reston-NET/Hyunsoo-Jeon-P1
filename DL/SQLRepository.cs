@@ -381,7 +381,7 @@ namespace DL
             return _listOfOrder;
         }
 
-        public List<Order> GetAllOrdersByID(int p_customerId)
+        public List<Order> GetAllOrdersByCustomerID(int p_customerId)
         {
             List<Order> _listOfOrder = new List<Order>();
             string sqlQuery = @"select * from Orders o 
