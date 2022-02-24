@@ -5,10 +5,11 @@ namespace Models
         public int StoreID { get; set; }
         public string StoreName { get; set; }
         public string StoreAddress { get; set; }
-
+        public string  UserName { get; set; }
         public StoreFront(){
-            StoreName="All parts 1";
-            StoreAddress="7777 Main St, San Jose, CA 77777";
+            StoreName="";
+            StoreAddress="";
+            UserName ="";
         }
 
         // public override string ToString()

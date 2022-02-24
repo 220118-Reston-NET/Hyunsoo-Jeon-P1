@@ -14,6 +14,7 @@ builder.Services.AddScoped<IRepository>(repo => new SQLRepository(builder.Config
 builder.Services.AddScoped<ICustomerBL, CustomerBL>();
 builder.Services.AddScoped<IOrderBL, OrderBL>();
 builder.Services.AddScoped<IInventoryBL, InventoryBL>();
+builder.Services.AddScoped<IUserBL, UserBL>();
 
 var app = builder.Build();
 

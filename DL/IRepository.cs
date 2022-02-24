@@ -4,7 +4,11 @@ namespace DL
 {
     public interface IRepository
     {
-        Customer AddCustomer(Customer p_customer);
+        Customer AddCustomer(Customer p_customer); 
+
+        User Register(User p_register);
+        List<User> GetAllUser();
+
         Order AddOrder(Order p_order);
         List<Customer> GetAllCustomer();
 

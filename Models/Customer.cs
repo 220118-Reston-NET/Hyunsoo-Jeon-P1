@@ -12,17 +12,18 @@ namespace Models{
             get { return _order; }
             set { _order = value; }
         }
-        
+        public string UserName { get; set; }
 
         public Customer(){
-            Name="Hyunsoo";
-            Address="1234 Main St, San Jose, CA 11111";
-            Email = "hyunsoo@email.com";
-            ContactNo = "123-456-7891";
+            Name="";
+            Address="";
+            Email = "";
+            ContactNo = "";
             _order = new List<Order>()
             {
                 new Order()
             };
+            UserName="";
         }
 
         // public override string ToString()

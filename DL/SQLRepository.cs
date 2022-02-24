@@ -15,7 +15,7 @@ namespace DL
         public Customer AddCustomer(Customer p_customer)
         {
             string sqlQuery = @"insert into Customer
-                            values(@customerName, @customerAddress, @customerEmail, @customerContactNo)";
+                            values(@customerName, @customerAddress, @customerEmail, @customerContactNo,@userName)";
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
@@ -26,6 +26,8 @@ namespace DL
                 command.Parameters.AddWithValue("@customerAddress", p_customer.Address);
                 command.Parameters.AddWithValue("@customerEmail", p_customer.Email);
                 command.Parameters.AddWithValue("@customerContactNo", p_customer.ContactNo);
+                command.Parameters.AddWithValue("@userName", p_customer.UserName);
+
 
                 command.ExecuteNonQuery();
             }
@@ -72,7 +74,7 @@ namespace DL
         public StoreFront AddStoreFront(StoreFront p_storeFront)
         {
             string sqlQuery = @"insert into StoreFront
-                            values(@storeName, @storeAddress)";
+                            values(@storeName, @storeAddress, @userName)";
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
@@ -81,6 +83,7 @@ namespace DL
                 SqlCommand command = new SqlCommand(sqlQuery, con);
                 command.Parameters.AddWithValue("@storeName", p_storeFront.StoreName);
                 command.Parameters.AddWithValue("@storeAddress", p_storeFront.StoreAddress);
+                command.Parameters.AddWithValue("@userName", p_storeFront.UserName);
 
                 command.ExecuteNonQuery();
             }
@@ -554,7 +557,52 @@ namespace DL
             }
         }
 
+        public User Register(User p_register)
+        {    
+            if(GetAllUser().Any(p => p.UserName.Equals(p_register.UserName))){
+                throw new Exception("User is aleady exists");
+            }       
+            string sqlQuery = @"insert into Users
+                                values(@userName, @userPassword)";
 
+            using(SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+                command.Parameters.AddWithValue("@userName", p_register.UserName);
+                command.Parameters.AddWithValue("userPassword", p_register.Password);
+
+                command.ExecuteNonQuery();
+                
+                
+            }
+            return p_register;
+        }
+
+        public List<User> GetAllUser()
+        {
+            string sqlQuery = @"select * from Users";
+
+            List<User> listOfUser = new List<User>();
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+                SqlDataReader reader = command.ExecuteReader();
+                
+                while(reader.Read())
+                {
+                    listOfUser.Add(new User(){
+                        UserID = reader.GetInt32(0),
+                        UserName = reader.GetString(1),
+                        Password = reader.GetString(2)
+                    });
+                }
+
+
+            }
+            return listOfUser;
+        }
     }
 }
 

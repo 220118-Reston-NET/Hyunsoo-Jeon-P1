@@ -140,5 +140,16 @@ namespace DL
         {
             throw new NotImplementedException();
         }
+
+        public User Register(User p_register)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<User> GetAllUser()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
