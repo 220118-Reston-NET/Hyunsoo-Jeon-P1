@@ -10,7 +10,7 @@ namespace Models
         
         public User()
         {
-            UserName = "Hyunsoo";
+            UserName = "hsprime85";
             Password = "1234";           
         }
 

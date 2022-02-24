@@ -142,4 +142,30 @@ namespace Test
             Assert.Equal(validName, storeName.StoreName);
         }
     }
+
+    public class UserModelTest
+    {
+        [Fact]
+        public void UserNameShouldvalidData()
+        {
+            User userName = new User();
+            string validName = "jordan";
+
+            userName.UserName = validName;
+
+            Assert.NotNull(userName.UserName);
+            Assert.Equal(validName, userName.UserName);
+        }
+        [Fact]
+        public void PasswordShouldvalidData()
+        {
+            User password = new User();
+            string validPassword = "1234";
+
+            password.Password = validPassword;
+
+            Assert.NotNull(password.Password);
+            Assert.Equal(validPassword, password.Password);
+        }
+    }
 }
