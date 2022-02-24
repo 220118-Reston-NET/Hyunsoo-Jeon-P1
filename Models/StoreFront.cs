@@ -11,10 +11,10 @@ namespace Models
             StoreAddress="7777 Main St, San Jose, CA 77777";
         }
 
-        public override string ToString()
-        {
-            return $"Store ID: {StoreID} \n Store Name: {StoreName}\n Store Address: {StoreAddress}";
-        }
+        // public override string ToString()
+        // {
+        //     return $"Store ID: {StoreID} \n Store Name: {StoreName}\n Store Address: {StoreAddress}";
+        // }
 
     }
 }

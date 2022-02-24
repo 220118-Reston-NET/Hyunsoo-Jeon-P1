@@ -25,10 +25,10 @@ namespace Models{
             };
         }
 
-        public override string ToString()
-        {
-            return $"Customer ID: {CustomerID} \nCustomer Name: {Name}\n Customer Address: {Address}\n Customer Email: {Email}\n Customer Contact number: {ContactNo}";
-        }
+        // public override string ToString()
+        // {
+        //     return $"Customer ID: {CustomerID} \nCustomer Name: {Name}\n Customer Address: {Address}\n Customer Email: {Email}\n Customer Contact number: {ContactNo}";
+        // }
     }
 
 }

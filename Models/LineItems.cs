@@ -15,9 +15,9 @@ namespace Models
             Qty = 20;
         }
 
-        public override string ToString()
-        {
-            return $"Product name : {ProductName}\n Price : {Price} \n Quantity: {Qty}";
-        }
+        // public override string ToString()
+        // {
+        //     return $"Product name : {ProductName}\n Price : {Price} \n Quantity: {Qty}";
+        // }
     }
 }

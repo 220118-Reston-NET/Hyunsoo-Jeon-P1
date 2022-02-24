@@ -26,9 +26,9 @@
             ProductName = "Coolant";
             Price = 15;
         }
-        public override string ToString()
-        {
-            return $"Product ID: {ProductID} \nProduct Name: {ProductName}\n Price: {Price}";
-        }
+        // public override string ToString()
+        // {
+        //     return $"Product ID: {ProductID} \nProduct Name: {ProductName}\n Price: {Price}";
+        // }
     }
 }    

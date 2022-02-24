@@ -47,5 +47,6 @@ namespace Test
             Assert.Equal(qty, acualListOfInventory[0].Qty);
 
         }
+       
     }
 }
