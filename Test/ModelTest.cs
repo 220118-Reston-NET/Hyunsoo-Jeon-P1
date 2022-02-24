@@ -167,5 +167,16 @@ namespace Test
             Assert.NotNull(password.Password);
             Assert.Equal(validPassword, password.Password);
         }
+
+        public void UserIdShouldvalidData()
+        {
+            User userId = new User();
+            int validUserId = 1;
+
+            userId.UserID = validUserId;
+
+            Assert.NotNull(userId.UserID);
+            Assert.Equal(validUserId, userId.UserID);
+        }
     }
 }
