@@ -5,19 +5,14 @@ namespace Models
 
         public int UserID { get; set; }
         public string UserName { get; set; }
-        
+
         public string Password { get; set; }
-        
+
         public User()
         {
-            UserName = "hsprime85";
-            Password = "1234";           
+            UserName = "";
+            Password = "";
         }
-
-        // public override string ToString()
-        // {
-        //     return $"Customer ID: {CustomerID} \nCustomer Name: {Name}\n Customer Address: {Address}\n Customer Email: {Email}\n Customer Contact number: {ContactNo}";
-        // }
     }
 
 }
