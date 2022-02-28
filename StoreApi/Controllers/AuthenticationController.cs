@@ -40,7 +40,7 @@ namespace StoreApi.Controllers
                     ContactNo = p_registerForm.ContactNo,
                     UserName = p_registerForm.UserName
                 });
-
+                Log.Information("Register success");
                 return Created("Register successful", p_registerForm);
             }
             catch (System.Exception)
@@ -61,6 +61,7 @@ namespace StoreApi.Controllers
                   Password = p_loginForm.Password
               }))
               {
+                    Log.Information("log in success");
                     return Ok("Login Successful");            
               }
               return BadRequest("Login failed"); 

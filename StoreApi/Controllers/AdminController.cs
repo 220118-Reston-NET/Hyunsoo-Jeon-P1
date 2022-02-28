@@ -30,6 +30,8 @@ namespace StoreApi.Controllers
 
             try
             {
+                Log.Information("Get All customers");
+
                 return Ok(await _customerBL.GetAllCustomerAsync());
 
             }
@@ -46,6 +48,7 @@ namespace StoreApi.Controllers
         {
             try
             {
+                Log.Information("Search by customer name " + customerName);
                 return Ok(_customerBL.SearchCustomerByName(customerName));
             }
             catch (System.Exception)
@@ -55,27 +58,12 @@ namespace StoreApi.Controllers
             }
         }
 
-        // POST: api/Customer
-        [HttpPost("AddCustomer")]
-        public IActionResult AddCustomer([FromBody] Customer customer)
-        {
-            try
-            {
-                return Created("Successfully added", _customerBL.AddCustomer(customer));
-            }
-            catch (System.Exception ex)
-            {
-
-                return Conflict(ex.Message);
-            }
-        }
-
-        // GET: api/Admin
         [HttpGet("OrderHistoryByStore")]
         public IActionResult GetAllOrdersByStoreId([FromQuery] int storeId)
         {
             try
             {
+                Log.Information("Get All orders by store Id");
                 return Ok(_orderBL.GetAllOrdersByStoreID(storeId));
             }
             catch (System.Exception)
@@ -90,6 +78,7 @@ namespace StoreApi.Controllers
         {
             try
             {
+                Log.Information("Get All inventory detail in store by id " + storeId);
                 return Ok(_inventoryBL.GetAllInventoryDetailInStoreByID(storeId));
             }
             catch (System.Exception)
@@ -105,6 +94,7 @@ namespace StoreApi.Controllers
         {   
             try
             {
+                Log.Information("Replenish invetory");
                 _inventoryBL.ReplenishInventory(p_inventoryId, p_qty);
                 return Ok();
             }

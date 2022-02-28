@@ -426,11 +426,42 @@ namespace DL
                         TotalPrice = reader.GetDecimal(1),
                         StoreID = reader.GetInt32(2),
                         CustomerID = reader.GetInt32(3),
+                        OrderCreated = reader.GetDateTime(4),
+                        Cart = GetLineItemByOrderId(reader.GetInt32(0))
                     });
                 }
             }
             return _listOfOrder;
         }
+
+        public List<LineItems> GetLineItemByOrderId(int p_orderId)
+        {
+            List<LineItems> _listOfLineItem = new List<LineItems>();
+
+            string sqlQuery = @"select * from Lineitem 
+                                where orderId = @orderId";
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                con.Open();
+
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+                command.Parameters.AddWithValue("@orderId", p_orderId);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    _listOfLineItem.Add(new LineItems()
+                    {
+                        Qty = reader.GetInt32(0),
+                        OrderId = reader.GetInt32(1),
+                        ProductID = reader.GetInt32(2),
+                    });
+                }
+            }
+            return _listOfLineItem;
+        }
+
 
         public List<Order> GetAllOrdersByCustomerID(int p_customerId)
         {
@@ -493,10 +524,10 @@ namespace DL
         }
 
 
-        public void PlaceOrder(int p_storeId, int p_customerID, int p_totalPrice, List<LineItems> p_lineItem)
+        public void PlaceOrder(int p_storeId, int p_customerID, decimal p_totalPrice, List<LineItems> p_lineItem)
         {
             string sqlQueryOrder = @"insert into Orders
-                            values(@orderTotalPrice, @storeId, @customerID);
+                            values(@orderTotalPrice, @storeId, @customerID, @orderCreated);
                             select scope_identity();";
 
             string sqlQueryLineItem = @"insert into LineItem
@@ -514,6 +545,7 @@ namespace DL
                 command.Parameters.AddWithValue("@orderTotalPrice", p_totalPrice);
                 command.Parameters.AddWithValue("@storeId", p_storeId);
                 command.Parameters.AddWithValue("@customerID", p_customerID);
+                command.Parameters.AddWithValue("@orderCreated", DateTime.UtcNow);
 
                 //command.ExecuteNonQuery();
 

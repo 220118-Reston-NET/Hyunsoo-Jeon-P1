@@ -1,8 +1,10 @@
+global using Serilog;
 using BL;
 using DL;
 
-var builder = WebApplication.CreateBuilder(args);
 
+var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration().WriteTo.File("./logs/server.txt").CreateLogger();
 // Add services to the container.
 
 builder.Services.AddControllers();

@@ -20,12 +20,13 @@ namespace DL
         StoreFront AddStoreFront(StoreFront p_storeFront);
         List<StoreFront> GetAllStoreFront();
         List<Inventory> GetAllInventory();
-        void PlaceOrder(int p_storeId, int p_customerID, int p_totalPrice, List<LineItems> p_lineItem);
+        void PlaceOrder(int p_storeId, int p_customerID, decimal p_totalPrice, List<LineItems> p_lineItem);
         List<Product> GetAllInventoryDetailInStoreByID(int p_storeId);
 
         Inventory AddInventory(Inventory p_inventory);
 
         List<Order> GetAllOrder();
+        List<LineItems> GetLineItemByOrderId(int p_orderId);
         List<Order> GetAllOrdersByCustomerID(int p_customerID);
 
         List<Product> GetAllproductDetailByStoreID(int p_storeId);

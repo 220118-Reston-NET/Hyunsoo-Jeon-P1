@@ -93,7 +93,7 @@ namespace DL
             throw new NotImplementedException();
         }
 
-        public void PlaceOrder(int p_storeId, int p_customerID, int p_totalPrice, List<LineItems> p_lineItem)
+        public void PlaceOrder(int p_storeId, int p_customerID, decimal p_totalPrice, List<LineItems> p_lineItem)
         {
             throw new NotImplementedException();
         }
@@ -147,6 +147,11 @@ namespace DL
         }
 
         public List<User> GetAllUsers()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<LineItems> GetLineItemByOrderId(int p_orderId)
         {
             throw new NotImplementedException();
         }

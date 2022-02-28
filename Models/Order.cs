@@ -7,7 +7,7 @@ namespace Models
         public int StoreID { get; set; }
         public int CustomerID { get; set; }
         public DateTime OrderCreated { get; set; }
-        public List<LineItems> LineItems { get; set; }
+        public List<LineItems> Cart { get; set; }
     
         
         public Order()
@@ -17,7 +17,7 @@ namespace Models
             StoreID = 0;
             CustomerID = 0;
             OrderCreated = DateTime.Now;
-            LineItems = new List<LineItems>()
+            Cart = new List<LineItems>()
             {
                 new LineItems()
             };
