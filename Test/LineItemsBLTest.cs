@@ -17,7 +17,7 @@
 //             int productId = 1;
 //             int orderId = 1;
 //             string productName = "Coolant";
-//             int price = 10;
+//             decimal price = 10;
 //             int qty = 40;
 
 //             LineItems lineItems = new LineItems()

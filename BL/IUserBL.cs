@@ -7,5 +7,6 @@ namespace BL
         User Register(User p_register);
         
         Boolean Login(User p_user);
-    }
+        List<User> GetAllUsers();
+        }
 }

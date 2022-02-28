@@ -146,7 +146,7 @@ namespace DL
             throw new NotImplementedException();
         }
 
-        public List<User> GetAllUser()
+        public List<User> GetAllUsers()
         {
             throw new NotImplementedException();
         }

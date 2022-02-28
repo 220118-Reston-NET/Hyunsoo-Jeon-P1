@@ -36,7 +36,51 @@ namespace Test
             Assert.Equal(validAddress, address.Address);
 
         }
-    }
+        [Fact]
+        public void CustomerIDShouldValidData()
+        {
+            //arrange
+            Customer id = new Customer();
+            int validID = 1;
+
+            //act
+            id.CustomerID = validID;
+
+            // assert
+            Assert.NotNull(id.CustomerID);
+            Assert.Equal(validID, id.CustomerID);
+        }
+            [Fact]
+            public void CustomerEmailShouldValidData()
+            {
+                //arrange
+                Customer email = new Customer();
+                string validEmail = "vaild@email.com";
+
+                //act
+                email.Email = validEmail;
+
+                // assert
+                Assert.NotNull(email.Email);
+                Assert.Equal(validEmail, email.Email);
+
+            }
+        [Fact]
+        public void CustomerContactNoShouldValidData()
+        {
+            //arrange
+            Customer contactNo = new Customer();
+            string validContactNo = "111-222-1111";
+
+            //act
+            contactNo.ContactNo = validContactNo;
+
+            // assert
+            Assert.NotNull(contactNo.ContactNo);
+            Assert.Equal(validContactNo, contactNo.ContactNo);
+        }
+        }
+
 
     public class InventoryModelTest
     {
@@ -108,6 +152,18 @@ namespace Test
             Assert.NotNull(storeName.StoreName);
             Assert.Equal(validName, storeName.StoreName);
         }
+
+        [Fact]
+        public void StoreFronStoreAddressShouldValidData()
+        {
+            StoreFront storeAddress = new StoreFront();
+            string validAddress = "1212 Sunset ave, San Jose, CA 99999";
+
+            storeAddress.StoreAddress = validAddress;
+
+            Assert.NotNull(storeAddress.StoreAddress);
+            Assert.Equal(validAddress, storeAddress.StoreAddress);
+        }
     }
 
     public class UserModelTest
@@ -146,4 +202,19 @@ namespace Test
             Assert.Equal(validUserId, userId.UserID);
         }
     }
-}
+    public class ProductModelTest
+    {
+        [Fact]
+        public void ProducteNameShouldValidData()
+        {
+            Product productName = new Product();
+            string validName = "Coolant";
+
+            productName.ProductName = validName;
+
+            Assert.NotNull(productName.ProductName);
+            Assert.Equal(validName, productName.ProductName);
+        }
+    }
+
+    }

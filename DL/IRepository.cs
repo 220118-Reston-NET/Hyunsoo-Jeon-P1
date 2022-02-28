@@ -7,7 +7,7 @@ namespace DL
         Customer AddCustomer(Customer p_customer); 
 
         User Register(User p_register);
-        List<User> GetAllUser();
+        List<User> GetAllUsers();
 
         Order AddOrder(Order p_order);
         List<Customer> GetAllCustomer();

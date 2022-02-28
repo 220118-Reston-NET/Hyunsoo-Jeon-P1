@@ -121,6 +121,33 @@ namespace DL
             return listOfCustomer;
         }
 
+        public List<User> GetAllUsers()
+        {
+            List<User> listOfUser = new List<User>();
+
+            string sqlQuery = @"select * from Users";
+
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                con.Open();
+
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    listOfUser.Add(new User()
+                    {
+                        UserID = reader.GetInt32(0),
+                        UserName = reader.GetString(1),
+                        Password = reader.GetString(2),
+                    });
+                }
+            }
+            return listOfUser;
+        }
+
         public async Task<List<Customer>> GetAllCustomerAsync()
         {
             List<Customer> listOfCustomer = new List<Customer>();
