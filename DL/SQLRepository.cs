@@ -37,7 +37,8 @@ namespace DL
         public Order AddOrder(Order p_order)
         {
             string sqlQuery = @"insert into Orders
-                            values(@orderTotalPrice, @storeId, @customerId)";
+                            (orderTotalPrice, storeId, customerId, orderCreated)
+                            values(@orderTotalPrice, @storeId, @customerId, @orderCreated)";
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
@@ -47,6 +48,7 @@ namespace DL
                 command.Parameters.AddWithValue("@orderTotalPrice", p_order.TotalPrice);
                 command.Parameters.AddWithValue("@storeId", p_order.StoreID);
                 command.Parameters.AddWithValue("@customerId", p_order.CustomerID);
+                command.Parameters.AddWithValue("@orderCreated", p_order.OrderCreated);
 
                 command.ExecuteNonQuery();
             }
@@ -188,7 +190,7 @@ namespace DL
                     {
                         ProductID = reader.GetInt32(0),
                         ProductName = reader.GetString(1),
-                        Price = reader.GetInt32(2),
+                        Price = reader.GetDecimal(2),
                     });
                 }
             }
@@ -216,7 +218,7 @@ namespace DL
                     {
                         ProductID = reader.GetInt32(0),
                         ProductName = reader.GetString(1),
-                        Price = reader.GetInt32(2)
+                        Price = reader.GetDecimal(2)
                     });
                 }
             }
@@ -367,7 +369,7 @@ namespace DL
                     {
                         ProductID = reader.GetInt32(0),
                         ProductName = reader.GetString(1),
-                        Price = reader.GetInt32(2),
+                        Price = reader.GetDecimal(2),
 
                     });
                 }
@@ -394,7 +396,7 @@ namespace DL
                     _listOfOrder.Add(new Order()
                     {
                         OrderID = reader.GetInt32(0),
-                        TotalPrice = reader.GetInt32(1),
+                        TotalPrice = reader.GetDecimal(1),
                         StoreID = reader.GetInt32(2),
                         CustomerID = reader.GetInt32(3),
                     });
@@ -424,7 +426,7 @@ namespace DL
                     _listOfOrder.Add(new Order()
                     {
                         OrderID = reader.GetInt32(0),
-                        TotalPrice = reader.GetInt32(1),
+                        TotalPrice = reader.GetDecimal(1),
                         StoreID = reader.GetInt32(2),
                         CustomerID = reader.GetInt32(3)
                     });
@@ -454,7 +456,7 @@ namespace DL
                 {
                     _listOfOrderByStore.Add(new Order(){
                         OrderID = reader.GetInt32(0),
-                        TotalPrice = reader.GetInt32(1),
+                        TotalPrice = reader.GetDecimal(1),
                         StoreID = reader.GetInt32(2),
                         CustomerID = reader.GetInt32(3)
                     });
@@ -532,7 +534,7 @@ namespace DL
                     {
                         ProductID = reader.GetInt32(0),
                         ProductName = reader.GetString(1),
-                        Price = reader.GetInt32(2)
+                        Price = reader.GetDecimal(2)
                     });
                 }
 

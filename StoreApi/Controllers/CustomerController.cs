@@ -22,65 +22,7 @@ namespace StoreApi.Controllers
         }
         
 
-        // GET: api/Customer
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllCustomerAsync()
-        {
-
-            try
-            {
-                return Ok(await _customerBL.GetAllCustomerAsync());
-
-            }
-            catch (System.Exception)
-            {
-                
-                return NotFound();
-            }
-        }
-
-        // GET: api/Customer/5
-        [HttpGet]
-        public IActionResult SearchCustomerByName([FromQuery] string customerName)
-        {
-            try
-            {
-                return Ok(_customerBL.SearchCustomerByName(customerName));
-            }
-            catch (System.Exception)
-            {
-
-                return NotFound();
-            }
-        }
-
-        // POST: api/Customer
-        [HttpPost("Add")]
-        public IActionResult AddCustomer([FromBody] Customer customer)
-        {
-            try
-            {
-                return Created("Successfully added", _customerBL.AddCustomer(customer));
-            }
-            catch (System.Exception ex)
-            {
-                
-                return Conflict(ex.Message);
-            }
-        }
-
-        // PUT: api/Customer/5
-        [HttpPut("Update/{id}")]
-        public void Update(int id, [FromBody] string customer)
-        {
-
-        }
-
-        // DELETE: api/Customer/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
 
         [HttpGet("OrderHistory")]
         public IActionResult GetAllOrdersByCustomerID([FromQuery] int customerID)

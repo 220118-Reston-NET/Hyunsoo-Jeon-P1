@@ -3,10 +3,10 @@ namespace Models
     public class Order
     {
         public int OrderID { get; set; }
-        public int TotalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
         public int StoreID { get; set; }
         public int CustomerID { get; set; }
-        
+        public DateTime OrderCreated { get; set; }
         
         private List<LineItems> _lineItems;
         public List<LineItems> LineItems
@@ -18,19 +18,20 @@ namespace Models
         
         public Order()
         {   
-            OrderID = 1;
-            TotalPrice = 15;
-            StoreID = 1;
-            CustomerID = 1;
+            OrderID = 0;
+            TotalPrice = 0;
+            StoreID = 0;
+            CustomerID = 0;
+            OrderCreated = DateTime.Now;
             LineItems = new List<LineItems>()
             {
                 new LineItems()
             };
         }
 
-        public override string ToString()
-        {
-            return $"Order ID : {OrderID} \n Customer ID : {CustomerID} \n Store ID : {StoreID} \nTotal Price: {TotalPrice}";
-        }
+        // public override string ToString()
+        // {
+        //     return $"Order ID : {OrderID} \n Customer ID : {CustomerID} \n Store ID : {StoreID} \nTotal Price: {TotalPrice}";
+        // }
     }
 }

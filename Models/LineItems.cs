@@ -5,14 +5,14 @@ namespace Models
         public int ProductID { get; set; }
         public int OrderId { get; set; }
         public string ProductName { get; set; }
-        public int Price { get; set; }           
+        public decimal Price { get; set; }           
         public int Qty { get; set; }
 
         public LineItems()
         {
-            ProductName = "Coolant";
-            Price = 10;
-            Qty = 20;
+            ProductName = "";
+            Price = 0;
+            Qty = 0;
         }
 
         // public override string ToString()

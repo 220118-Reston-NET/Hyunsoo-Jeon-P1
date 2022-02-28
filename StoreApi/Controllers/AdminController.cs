@@ -14,10 +14,59 @@ namespace StoreApi.Controllers
     {
         private IInventoryBL _inventoryBL;
         private IOrderBL _orderBL;
-        public AdminController(IInventoryBL p_inventoryBL, IOrderBL p_orderBL)
+        private ICustomerBL _customerBL;
+        public AdminController(IInventoryBL p_inventoryBL, IOrderBL p_orderBL, CustomerBL p_customerBL)
         {
             _inventoryBL = p_inventoryBL;
             _orderBL = p_orderBL;
+            _customerBL = p_customerBL;
+        }
+
+        // GET: api/Customer
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllCustomerAsync()
+        {
+
+            try
+            {
+                return Ok(await _customerBL.GetAllCustomerAsync());
+
+            }
+            catch (System.Exception)
+            {
+
+                return NotFound();
+            }
+        }
+
+        // GET: api/Customer/5
+        [HttpGet("SearchCustomerByName")]
+        public IActionResult SearchCustomerByName([FromQuery] string customerName)
+        {
+            try
+            {
+                return Ok(_customerBL.SearchCustomerByName(customerName));
+            }
+            catch (System.Exception)
+            {
+
+                return NotFound();
+            }
+        }
+
+        // POST: api/Customer
+        [HttpPost("AddCustomer")]
+        public IActionResult AddCustomer([FromBody] Customer customer)
+        {
+            try
+            {
+                return Created("Successfully added", _customerBL.AddCustomer(customer));
+            }
+            catch (System.Exception ex)
+            {
+
+                return Conflict(ex.Message);
+            }
         }
 
         // GET: api/Admin

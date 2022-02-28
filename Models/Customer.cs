@@ -1,12 +1,15 @@
-namespace Models{
-    public class Customer{
-        
+namespace Models
+{
+    public class Customer
+    {
+
         public int CustomerID { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
         public string ContactNo { get; set; }
-        private List<Order> _order ;
+
+        private List<Order> _order;
         public List<Order> Order
         {
             get { return _order; }
@@ -14,16 +17,18 @@ namespace Models{
         }
         public string UserName { get; set; }
 
-        public Customer(){
-            Name="";
-            Address="";
+        public Customer()
+        {
+            Name = "";
+            Address = "";
             Email = "";
             ContactNo = "";
+            UserName = "";
             _order = new List<Order>()
             {
                 new Order()
             };
-            UserName="";
+
         }
 
         // public override string ToString()
