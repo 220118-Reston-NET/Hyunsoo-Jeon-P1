@@ -9,10 +9,10 @@ namespace Models
 
         public Inventory()
         {
-            InventoryID = 1;
-            StoreID = 2;
-            ProductID = 1;
-            Qty = 6;
+            InventoryID = 0;
+            StoreID = 0;
+            ProductID = 0;
+            Qty = 0;
         }
 
         // public override string ToString()

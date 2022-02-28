@@ -546,14 +546,14 @@ namespace DL
         {
             string sqlQuery = @"update Inventory
                                 set qty = qty + @qty
-                                where inventoryId = @p_inventoryId ";
+                                where inventoryId = @p_inventoryId";
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
                 con.Open();
                 SqlCommand command = new SqlCommand(sqlQuery, con);
                 command.Parameters.AddWithValue("@qty", p_qty);
-                command.Parameters.AddWithValue("p_inventoryId", p_inventoryId);
+                command.Parameters.AddWithValue("@p_inventoryId", p_inventoryId);
 
                 command.ExecuteNonQuery();
             }
@@ -605,6 +605,7 @@ namespace DL
             }
             return listOfUser;
         }
+
     }
 }
 

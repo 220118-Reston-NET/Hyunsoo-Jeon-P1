@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BL;
+using DL;
 using Models;
 
 namespace StoreApi.Controllers
@@ -15,7 +16,7 @@ namespace StoreApi.Controllers
         private IInventoryBL _inventoryBL;
         private IOrderBL _orderBL;
         private ICustomerBL _customerBL;
-        public AdminController(IInventoryBL p_inventoryBL, IOrderBL p_orderBL, CustomerBL p_customerBL)
+        public AdminController(IInventoryBL p_inventoryBL, IOrderBL p_orderBL, ICustomerBL p_customerBL)
         {
             _inventoryBL = p_inventoryBL;
             _orderBL = p_orderBL;
@@ -23,7 +24,7 @@ namespace StoreApi.Controllers
         }
 
         // GET: api/Customer
-        [HttpGet("GetAll")]
+        [HttpGet("GetAllCustomers")]
         public async Task<IActionResult> GetAllCustomerAsync()
         {
 
@@ -98,29 +99,21 @@ namespace StoreApi.Controllers
             }
         }
 
-            // GET: api/Admin/5
-            // [HttpGet("{id}", Name = "Get")]
-            // public string Get(int id)
-            // {
-            //     return "value";
-            // }
 
-            // POST: api/Admin
-            // [HttpPost]
-            // public void Post([FromBody] string value)
-            // {
-            // }
+        [HttpGet("ReplenishInventory")]
+        public IActionResult ReplenishInventory(int p_inventoryId, int p_qty)
+        {   
+            try
+            {
+                _inventoryBL.ReplenishInventory(p_inventoryId, p_qty);
+                return Ok();
+            }
+            catch (System.Exception)
+            {
 
-            // PUT: api/Admin/5
-            // [HttpPut("{id}")]
-            // public void Put(int id, [FromBody] string value)
-            // {
-            // }
+                return NotFound();
+            }
+        }
 
-            // DELETE: api/Admin/5
-            // [HttpDelete("{id}")]
-            // public void Delete(int id)
-            // {
-            // }
         }
     }
