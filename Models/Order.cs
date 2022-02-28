@@ -7,14 +7,8 @@ namespace Models
         public int StoreID { get; set; }
         public int CustomerID { get; set; }
         public DateTime OrderCreated { get; set; }
-        
-        private List<LineItems> _lineItems;
-        public List<LineItems> LineItems
-        {
-            get { return _lineItems; }
-            set { _lineItems = value; }
-        }
-        
+        public List<LineItems> LineItems { get; set; }
+    
         
         public Order()
         {   
