@@ -4,7 +4,10 @@ using DL;
 
 
 var builder = WebApplication.CreateBuilder(args);
-Log.Logger = new LoggerConfiguration().WriteTo.File("./logs/server.txt").CreateLogger();
+
+Log.Logger = new LoggerConfiguration()
+            .WriteTo.File("./logs/server.txt")
+            .CreateLogger();
 // Add services to the container.
 
 builder.Services.AddControllers();
