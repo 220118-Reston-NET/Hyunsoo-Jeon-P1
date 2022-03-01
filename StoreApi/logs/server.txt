@@ -30,3 +30,22 @@
 2022-03-01 10:56:07.255 -08:00 [INF] Get all orders by customer id
 2022-03-01 10:59:06.643 -08:00 [INF] Add order successfully Models.Order
 2022-03-01 10:59:14.400 -08:00 [INF] Get all orders by customer id
+2022-03-01 11:02:46.310 -08:00 [INF] Get all orders by customer id
+2022-03-01 11:04:22.941 -08:00 [INF] Add order successfully Models.Order
+2022-03-01 11:04:35.161 -08:00 [INF] Get all orders by customer id
+2022-03-01 11:07:39.863 -08:00 [INF] Get all orders by order id
+2022-03-01 11:07:54.068 -08:00 [INF] Get all orders by order id
+2022-03-01 11:08:01.343 -08:00 [INF] Get all orders by order id
+2022-03-01 11:14:28.681 -08:00 [INF] Get All orders by store Id
+2022-03-01 11:14:36.847 -08:00 [INF] Get All orders by store Id
+2022-03-01 11:14:52.074 -08:00 [INF] Get All inventory detail in store by id 1
+2022-03-01 11:23:22.617 -08:00 [INF] Get All inventory detail in store by id 1
+2022-03-01 11:43:43.633 -08:00 [INF] Get All inventory detail in store by id 1
+2022-03-01 11:45:32.887 -08:00 [INF] Get All inventory detail in store by id 1
+2022-03-01 11:46:56.997 -08:00 [INF] Search by customer name Peter
+2022-03-01 11:47:09.897 -08:00 [INF] Search by customer name Hyunsoo
+2022-03-01 11:47:16.233 -08:00 [INF] Get All customers
+2022-03-01 11:48:14.001 -08:00 [INF] Get all orders by order id
+2022-03-01 11:58:27.390 -08:00 [INF] Register success
+2022-03-01 11:59:54.299 -08:00 [INF] Register success
+2022-03-01 12:00:27.462 -08:00 [INF] log in success

@@ -15,7 +15,7 @@ namespace BL
         {   
             List<Customer> listOfCustomer = _repo.GetAllCustomer();
             
-            if(listOfCustomer.Count < 10)
+            if(listOfCustomer.Count < 20)
             {
                 return _repo.AddCustomer(p_customer);
             }

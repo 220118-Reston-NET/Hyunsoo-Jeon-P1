@@ -9,5 +9,6 @@ namespace BL
         List<Product> SearchProduct(string p_name);
 
         List<Product> GetAllProdct();
+
     }
 }

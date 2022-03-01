@@ -4,6 +4,7 @@ using Models;
 namespace BL
 {
     public class ProductBL : IProductBL
+    
     {
         private IRepository _repo;
         public ProductBL(IRepository p_repo)
@@ -30,6 +31,7 @@ namespace BL
         {
             return _repo.GetAllProduct();
         }
+
 
         public List<Product> SearchProduct(string p_productName)
         {   

@@ -20,7 +20,7 @@ namespace DL
         StoreFront AddStoreFront(StoreFront p_storeFront);
         List<StoreFront> GetAllStoreFront();
         List<Inventory> GetAllInventory();
-        void PlaceOrder(int p_storeId, int p_customerID, List<LineItems> p_lineItem);
+        void PlaceOrder(int p_storeId, int p_customerID,  List<LineItems> p_lineItem);
         List<Product> GetAllInventoryDetailInStoreByID(int p_storeId);
 
         Inventory AddInventory(Inventory p_inventory);
