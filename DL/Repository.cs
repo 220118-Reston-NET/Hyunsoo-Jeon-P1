@@ -93,7 +93,7 @@ namespace DL
             throw new NotImplementedException();
         }
 
-        public void PlaceOrder(int p_storeId, int p_customerID, decimal p_totalPrice, List<LineItems> p_lineItem)
+        public void PlaceOrder(int p_storeId, int p_customerID, List<LineItems> p_lineItem)
         {
             throw new NotImplementedException();
         }

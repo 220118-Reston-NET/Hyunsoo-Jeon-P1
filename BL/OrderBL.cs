@@ -20,9 +20,9 @@ namespace BL
         {
             return _repo.GetLineItemByOrderId(p_orderId);
         }
-        public void PlaceOrder(int p_storeId, int p_customerID, decimal p_totalPrice, List<LineItems> p_lineItem)
+        public void PlaceOrder(int p_storeId, int p_customerID,  List<LineItems> p_lineItem)
         {
-            _repo.PlaceOrder(p_storeId, p_customerID, p_totalPrice, p_lineItem);
+            _repo.PlaceOrder(p_storeId, p_customerID, p_lineItem);
         }
 
         public List<Order> GetAllOrdersByCustomerID(int p_customerID)

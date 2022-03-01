@@ -61,7 +61,7 @@ namespace StoreApi.Controllers
            
             try
             {
-                _orderBL.PlaceOrder(order.StoreID, order.CustomerID, order.TotalPrice, order.Cart);
+                _orderBL.PlaceOrder(order.StoreID, order.CustomerID, order.Cart);
                 Log.Information("Add order successfully " + order);
  
                 return Created("Successfully added", order);

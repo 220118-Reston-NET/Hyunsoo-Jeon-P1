@@ -408,7 +408,8 @@ namespace DL
         {
             List<Order> _listOfOrder = new List<Order>();
 
-            string sqlQuery = @"select * from Orders o";
+            string sqlQuery = @"select * from Orders o
+                            order by orderCreated desc";
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
@@ -473,7 +474,7 @@ namespace DL
             List<Order> _listOfOrder = new List<Order>();
             string sqlQuery = @"select * from Orders o 
                                 where o.customerId = @customerId
-                                order by orderId desc";
+                                order by orderCreated desc";
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
@@ -529,7 +530,7 @@ namespace DL
         }
 
 
-        public void PlaceOrder(int p_storeId, int p_customerID, decimal p_totalPrice, List<LineItems> p_lineItem)
+        public void PlaceOrder(int p_storeId, int p_customerID, List<LineItems> p_lineItem)
         {
             string sqlQueryOrder = @"insert into Orders
                             values(@orderTotalPrice, @storeId, @customerID, @orderCreated);
@@ -542,6 +543,7 @@ namespace DL
                                                 set qty = qty - @qty
                                                 where storeId  = @storeId AND productId = @productId";
 
+            decimal p_totalPrice = TotalPrice(p_lineItem);
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
                 con.Open();
@@ -552,12 +554,11 @@ namespace DL
                 command.Parameters.AddWithValue("@customerID", p_customerID);
                 command.Parameters.AddWithValue("@orderCreated", DateTime.UtcNow);
 
-                //command.ExecuteNonQuery();
 
                 int orderId = Convert.ToInt32(command.ExecuteScalar());
 
                 foreach (var item in p_lineItem)
-                {
+                {   
                     
                     SqlCommand command2 = new SqlCommand(sqlQueryLineItem, con);
                     command2.Parameters.AddWithValue("@qty", item.Qty);
@@ -575,6 +576,18 @@ namespace DL
                 }
 
             }
+        }
+        
+        public decimal TotalPrice(List<LineItems> p_lineItem)
+        {
+            decimal p_totalPrice = 0;
+            foreach (var item in p_lineItem)
+            {
+                item.Price = GetAllProduct().Find(p => p.ProductID == item.ProductID).Price;
+                p_totalPrice = +item.Price * item.Qty;
+
+            }
+            return p_totalPrice;
         }
 
         public List<Product> GetAllproductDetailByStoreID(int p_storeId)
