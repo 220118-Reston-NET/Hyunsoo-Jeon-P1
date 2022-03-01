@@ -73,6 +73,21 @@ namespace StoreApi.Controllers
             }
         }
 
+        [HttpGet("OrderDetails")]
+        public IActionResult GetOrderByorderID([FromQuery] int orderID)
+        {
+            try
+            {
+                Log.Information("Get all orders by order id");
+                return Ok(_orderBL.GetAllOrder().Find(p => p.OrderID == orderID));
+            }
+            catch (System.Exception)
+            {
+
+                return NotFound();
+            }
+        }
+
         [HttpGet("StoreInventory")]
         public IActionResult GetAllInventoryByStoreId([FromQuery] int storeId)
         {
@@ -89,7 +104,7 @@ namespace StoreApi.Controllers
         }
 
 
-        [HttpGet("ReplenishInventory")]
+        [HttpPut("ReplenishInventory")]
         public IActionResult ReplenishInventory(int p_inventoryId, int p_qty)
         {   
             try

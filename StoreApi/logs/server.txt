@@ -49,3 +49,13 @@
 2022-03-01 11:58:27.390 -08:00 [INF] Register success
 2022-03-01 11:59:54.299 -08:00 [INF] Register success
 2022-03-01 12:00:27.462 -08:00 [INF] log in success
+2022-03-01 12:01:51.458 -08:00 [INF] Replenish invetory
+2022-03-01 12:06:19.777 -08:00 [INF] Get All orders by store Id
+2022-03-01 12:06:40.007 -08:00 [INF] Get all orders by customer id
+2022-03-01 12:06:50.018 -08:00 [INF] Get all orders by order id
+2022-03-01 12:08:39.918 -08:00 [INF] Get all orders by order id
+2022-03-01 12:10:10.030 -08:00 [INF] Add order successfully Models.Order
+2022-03-01 12:10:20.929 -08:00 [INF] Get all orders by customer id
+2022-03-01 12:11:00.635 -08:00 [INF] Get all orders by order id
+2022-03-01 12:11:16.819 -08:00 [INF] Search by customer name Tuan
+2022-03-01 12:13:27.546 -08:00 [INF] Replenish invetory

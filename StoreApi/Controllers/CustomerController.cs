@@ -39,21 +39,6 @@ namespace StoreApi.Controllers
             }
         }
 
-        [HttpGet("OrderDetails")]
-        public IActionResult GetOrderByorderID([FromQuery] int orderID)
-        {
-            try
-            {
-                Log.Information("Get all orders by order id");
-                return Ok(_orderBL.GetAllOrder().Find(p => p.OrderID == orderID));
-            }
-            catch (System.Exception)
-            {
-
-                return NotFound();
-            }
-        }
-
         // POST: api/Customer
         [HttpPost("AddOrder")]
         public IActionResult AddOrder([FromBody] Order order)
