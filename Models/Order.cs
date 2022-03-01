@@ -17,10 +17,7 @@ namespace Models
             StoreID = 0;
             CustomerID = 0;
             OrderCreated = DateTime.Now;
-            Cart = new List<LineItems>()
-            {
-                new LineItems()
-            };
+            Cart = new List<LineItems>();
         }
 
         // public override string ToString()

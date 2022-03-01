@@ -27,7 +27,7 @@ namespace BL
 
         public List<Order> GetAllOrdersByCustomerID(int p_customerID)
         {   
-            return _repo.GetAllOrdersByCustomerID(p_customerID);
+            return GetAllOrder().FindAll(p => p.CustomerID == p_customerID);
         }
 
         public List<Order> GetAllOrdersByStoreID(int p_storeId)

@@ -438,8 +438,11 @@ namespace DL
         {
             List<LineItems> _listOfLineItem = new List<LineItems>();
 
-            string sqlQuery = @"select * from Lineitem 
-                                where orderId = @orderId";
+            string sqlQuery = @"select li.qty , li.orderId , li.productId , p.productName ,p.productPrice 
+                                from LineItem li, Product p 
+                                where li.productId = p.productId
+                                and li.orderId = @orderId";
+
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
                 con.Open();
@@ -456,6 +459,8 @@ namespace DL
                         Qty = reader.GetInt32(0),
                         OrderId = reader.GetInt32(1),
                         ProductID = reader.GetInt32(2),
+                        ProductName = reader.GetString(3),
+                        Price = reader.GetDecimal(4)
                     });
                 }
             }
@@ -553,6 +558,7 @@ namespace DL
 
                 foreach (var item in p_lineItem)
                 {
+                    
                     SqlCommand command2 = new SqlCommand(sqlQueryLineItem, con);
                     command2.Parameters.AddWithValue("@qty", item.Qty);
                     command2.Parameters.AddWithValue("@orderId", orderId);
